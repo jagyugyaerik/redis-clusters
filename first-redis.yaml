@@ -2,7 +2,7 @@ kind: Redis
 apiVersion: redis.redis.opstreelabs.in/v1beta1
 metadata:
   name: redis-standalone
-  namespace: openshift-operators
+  namespace: openshift-gitops
 spec:
   kubernetesConfig:
     image: 'quay.io/opstree/redis:v7.0.5'
