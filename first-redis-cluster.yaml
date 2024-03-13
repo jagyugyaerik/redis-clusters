@@ -14,6 +14,10 @@ spec:
     version: v3
     helm:
       releaseName: first-redis-cluster
+      values: |
+        master:
+          persistence:
+            enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: openshift-gitops
